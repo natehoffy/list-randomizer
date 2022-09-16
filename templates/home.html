@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>
+    List Randomizer
+    </title>
+</head>
+<body>
+    <button onclick="location.href='{% url 'script' %}'">Randomize List</button> <hr>
+    <div>
+        <div>
+            {% if pse %}
+                {{ data | safe }}
+            {% endif %}
+        </div>
+    </div>
+    {% if data %}
+        {{data | safe}}
+    {% endif %}
+</body>
